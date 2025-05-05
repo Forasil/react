@@ -1,23 +1,23 @@
 import './App.css';
 import MainPage from './pages/MainPage'
 import CartPage from './pages/CartPage';
-import Aside from './components/Aside';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Aside from './components/Aside';
 
 function App() {
   return (
     <Router>
-      <Header></Header>
-      <Aside></Aside>
-      <nav>
-        <Link to="/">Главная</Link>
-        <Link to="/cart">Корзина</Link>
-      </nav>
+       <Header></Header>
+       <div className='page-content'>
+      
+        <Aside></Aside>
+
         <Routes>
-          <Route path='/' element={<MainPage/>}/>
-          <Route path='/cart' element={<CartPage/>}/>
-        </Routes>
+           <Route path='/' element={<MainPage/>}/>
+           <Route path='/cart' element={<CartPage/>}/>
+         </Routes>
+       </div>
     </Router>
   );
 }
