@@ -1,28 +1,71 @@
 import ProductCard from "../components/ProductCard";
 
+
 function MainPage() {
     const products = [
         {
             id: 1,
-            title: "Резинка",
-            description: "Резинка для волос",
-            price: 100,
-            imageUrl: ""
-        },
-        {
-            id: 2,
-            title: "Жвачка",
-            description: "Жвачка для классного дыхания",
+            title: "Наполеон",
+            description: "Торт Наполеон",
             price: 200,
+            imageUrl: "/assets/наполеон.png"
+        },
+        {
+          id: 2,
+          title: "НПрага",
+          description: "Торт Прага",
+          price: 200,
+          imageUrl: "/assets/прага.png"
+        },
+        {
+          id: 3,
+          title: "Медовик",
+          description: "Торт Медовик",
+          price: 200,
+          imageUrl: "/assets/медовик.png"
+        },
+        {
+            id: 4,
+            title: "Ванильное",
+            description: "Мороженое Ванильное",
+            price: 100,
             imageUrl: ""
         },
         {
-            id: 3,
-            title: "Ракушка",
-            description: "Ракушка морская",
-            price: 100,
+          id: 5,
+          title: "Шоколадное",
+          description: "Мороженое Шоколадное",
+          price: 100,
+          imageUrl: ""
+        },
+        {
+          id: 6,
+          title: "Клубничное",
+          description: "Мороженое Клубничное",
+          price: 100,
+          imageUrl: ""
+        },
+        {
+            id: 7,
+            title: "Яблоки",
+            description: "Фрукты Яблоки",
+            price: 150,
             imageUrl: ""
-        }
+        },
+        {
+          id: 8,
+          title: "Бананы",
+          description: "Фрукты Бананы",
+          price: 150,
+          imageUrl: ""
+        },
+        {
+          id: 9,
+          title: "Апельсины",
+          description: "Фрукты Апельсины",
+          price: 150,
+          imageUrl: ""
+       }
     ];
 
     return(
