@@ -1,14 +1,15 @@
-function ProductCard({name, desc, price, img}) {
+function ProductCard({product, addToCart}) {
     return (
         <div className="card">
             <div className="card-img">
-                <img src={img}></img>
+                <img src={product.img} alt={product.title}></img>
             </div>
-            <p className="card-name">{name}</p>
-            <p className="card-desc">{desc}</p>
-            <p className="card-price">{price}</p>
-            <button onClick={() => alert('Товар добавлен в корзину')}>Добавить</button>
+            <p className="card-name">{product.title}</p>
+            <p className="card-desc">{product.description}</p>
+            <p className="card-price">Цена: {product.price}</p>
+            <button onClick={() => addToCart(product)}>Добавить</button>
         </div>
+        
     );
 }
 
