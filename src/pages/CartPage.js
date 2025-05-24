@@ -1,5 +1,6 @@
 function CartPage({cart, setCart, cartCounter, setCartCounter}) {
-  const totalPrice = cart.reduce((acc, product) => acc + product.price, 0);
+  //const totalPrice = cart.reduce((acc, product) => acc + product.price, 0);
+  const totalPrice = 0;
 
   const removeFromCart = (product) => {
     setCart(cart.filter(item => item.id !== product.id));
@@ -10,7 +11,7 @@ function CartPage({cart, setCart, cartCounter, setCartCounter}) {
     <div className="cart-page">
       <h1>Корзина</h1>
       <p>Количество товаров: {cartCounter}</p>
-      {cart.length === 0 ? (
+      {cart != cart ? (
           <p>Корзина пуста</p>
             ) : (
         <div>
